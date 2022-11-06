@@ -11,3 +11,250 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: local('Poppins-SemiBold'), url(./assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: local('Poppins-Bold'), url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins-Regular'), url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-LightItalic';
+  src: local('Poppins-LightItalic'), url(./assets/fonts/Poppins-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: local('Poppins-Light'), url(./assets/fonts/Poppins-Light.ttf);
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+}
+
+.home {
+  /* background: red; */
+  padding: 0 40px;
+}
+
+.main-footer {
+  background: #D0D0D0;
+  text-align: start;
+  padding: 40px 0;
+}
+.location {
+  font-family: 'Poppins-SemiBold';
+  font-size: 20px;
+}
+
+.socials {
+  margin: 4px;
+}
+
+.logo {
+  width: 20vmin;
+}
+
+.footer {
+  background: black;
+  padding: 20px 80px;
+  color: white;
+}
+
+.avatar {
+  height: 70vh;
+}
+
+.title {
+  font-family: 'Poppins-Bold';
+  font-size: 40px;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-family: 'Poppins';
+}
+
+.signup-text {
+  color: #7E1CFE;
+  font-family: 'Poppins-SemiBold';
+  font-size: 24px;
+}
+
+.business-input {
+  color: #7E1CFE;
+  font-family: 'Poppins-LightItalic';
+  font-size: 15px;
+  background: none;
+  border: none;
+  border-bottom: #7E1CFE 1px solid;
+}
+
+::placeholder {
+  color: #7E1CFE;
+}
+
+.notify-btn {
+  background-color: #7E1CFE;
+  border-radius: 10px;
+  border: none;
+  padding: 2px 30px;
+  color: white;
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+
+.signup-btn {
+  border: #7E1CFE 1px solid;
+  border-radius: 10px;
+  padding: 2px 30px;
+  font-family: 'Poppins';
+  font-size: 20px;
+  background: none;
+  color: #0085FF;
+  text-decoration-line: underline;
+}
+
+.video-container {
+  /* width: 60vh; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+video, .video {
+  text-align: center;
+  align-self: center;
+  flex: 1;
+}
+
+.card-container {
+  padding: 50px 40px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 10px;
+  margin: 10px;
+  align-items: center;
+  height: 55vh;
+}
+
+.card-icon {
+  margin-bottom: 10px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: center;
+  text-align: center;
+  align-self: center;
+  width: max-content;
+}
+
+.card-icon-container {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+
+.card-icon-container img {
+  max-width:100%;
+  max-height:100%;
+}
+
+.card-title {
+  font-family: 'Poppins-SemiBold';
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.card-subtitle {
+  font-family: 'Poppins';
+  font-size: 15px;
+}
+
+.service {
+  /* border: #0085FF 1px solid; */
+  align-items: center;
+  width: 40vh;
+  margin: 20px 10px;
+}
+
+.service-image {
+  width: 40vh;
+}
+
+.line {
+  width: 30%;
+  height: 4px;
+  background: #7E1CFE;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  color: #393939;
+  font-size: 18px;
+  font-family: 'Poppins-Light';
+  margin-bottom: 3px;
+}
+
+.service-subtitle {
+  font-size: 15px;
+  font-family: 'Poppins';
+}
+
+.form-input {
+  border-radius: 10px;
+  border: #7E1CFE 1px solid;
+  color: #7E1CFE;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* .button:hover {background-color: #3e8e41} */
+
+.button:active {
+  background-color: #8042d1;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
